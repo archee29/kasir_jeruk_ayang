@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "463379338710",
+    "project_id": "kasirjeruk",
+    "storage_bucket": "kasirjeruk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463379338710:android:071579dfc3045f4eeec077",
+        "android_client_info": {
+          "package_name": "com.example.kasir_jeruk_ayang"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWmvaaVLEL0WZzDV63Dr6iznrc8MGQ7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

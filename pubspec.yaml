@@ -1,19 +1,27 @@
 name: kasir_jeruk_ayang
-description: A new Flutter project.
-publish_to: 'none'
 version: 0.1.0
-
-environment:
+publish_to: none
+description: A new Flutter project.
+environment: 
   sdk: '>=3.0.6 <4.0.0'
 
-dependencies:
-  flutter:
+dependencies: 
+  firebase_core: ^2.24.2
+  get_storage: any
+  firebase_auth: any
+  cloud_firestore: any
+  flutter_svg: any
+  intl: any
+  image_picker: any
+  get: 4.6.6
+  flutter: 
     sdk: flutter
 
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
+dev_dependencies: 
   flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
 
-flutter:
+flutter: 
   uses-material-design: true
+
