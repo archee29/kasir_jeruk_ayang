@@ -2,10 +2,10 @@ name: kasir_jeruk_ayang
 version: 0.1.0
 publish_to: none
 description: A new Flutter project.
-environment: 
+environment:
   sdk: '>=3.0.6 <4.0.0'
 
-dependencies: 
+dependencies:
   firebase_core: ^2.24.2
   get_storage: any
   firebase_auth: any
@@ -13,15 +13,60 @@ dependencies:
   flutter_svg: any
   intl: any
   image_picker: any
-  get: 4.6.6
-  flutter: 
+  get:
+  geolocator: ^10.0.1
+  geocoding: ^2.1.0
+  maps_launcher: ^2.0.1
+  syncfusion_flutter_datepicker: ^20.1.51
+  syncfusion_flutter_calendar:
+  table_calendar: ^3.0.9
+  flutter_switch:
+  firebase_database: ^10.4.0
+
+  flutter:
     sdk: flutter
 
-dev_dependencies: 
+dev_dependencies:
   flutter_lints: ^2.0.0
-  flutter_test: 
+  flutter_test:
     sdk: flutter
+  firebase_analytics: ^10.4.5
+  google_fonts: ^5.1.0
 
-flutter: 
+
+flutter:
   uses-material-design: true
+
+  assets:
+      - assets/images/
+      - assets/icons/
+      - assets/fonts/
+
+  fonts:
+      - family: poppins
+        fonts:
+          - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+            weight: 400
+          - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+            weight: 500
+          - asset: assets/fonts/Poppins/Poppins-SemiBold.ttf
+            weight: 600
+          - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+            weight: 700
+          - asset: assets/fonts/Poppins/Poppins-ExtraBold.ttf
+            weight: 800
+      - family: inter
+        fonts:
+          - asset: assets/fonts/inter/Inter-Regular.ttf
+            weight: 400
+          - asset: assets/fonts/inter/Inter-Medium.ttf
+            weight: 500
+          - asset: assets/fonts/inter/Inter-SemiBold.ttf
+            weight: 600
+          - asset: assets/fonts/inter/Inter-Bold.ttf
+            weight: 700
+          - asset: assets/fonts/inter/Inter-ExtraBold.ttf
+            weight: 800
+          - asset: assets/fonts/inter/Inter-Black.ttf
+            weight: 900
 

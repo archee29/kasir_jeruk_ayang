@@ -39,7 +39,6 @@ class DefaultFirebaseOptions {
     appId: '1:463379338710:android:071579dfc3045f4eeec077',
     messagingSenderId: '463379338710',
     projectId: 'kasirjeruk',
-    databaseURL: '',
     storageBucket: 'kasirjeruk.appspot.com',
   );
   static const FirebaseOptions ios = FirebaseOptions(
@@ -47,7 +46,6 @@ class DefaultFirebaseOptions {
     appId: '1:463379338710:android:071579dfc3045f4eeec077',
     messagingSenderId: '463379338710',
     projectId: 'kasirjeruk',
-    databaseURL: '',
     storageBucket: 'kasirjeruk.appspot.com',
     iosBundleId: 'com.example.kasirJerukAyang',
   );

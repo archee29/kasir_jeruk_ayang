@@ -1,11 +1,11 @@
 import 'package:get/get.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-// import 'package:tugas_akhir/app/controllers/feeder_controller.dart';
-// import 'package:tugas_akhir/app/routes/app_pages.dart';
 import 'package:kasir_jeruk_ayang/app/routes/app_pages.dart';
+import 'package:kasir_jeruk_ayang/app/controllers/transaksi_controller.dart';
 
 class PageIndexController extends GetxController {
   // final feederController = Get.find<FeederController>();
+  final transaksiController = Get.find<TransaksiController>();
 
   RxInt pageIndex = 0.obs;
   FirebaseAuth auth = FirebaseAuth.instance;
@@ -23,6 +23,7 @@ class PageIndexController extends GetxController {
     switch (index) {
       case 1:
         // feederController.feeder();
+        transaksiController.transaksi();
         break;
       case 2:
         Get.offAllNamed(Routes.SETTING);
