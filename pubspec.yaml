@@ -8,6 +8,7 @@ environment:
 dependencies:
   firebase_core: ^2.24.2
   get_storage: any
+  firebase_storage:
   firebase_auth: any
   cloud_firestore: any
   flutter_svg: any

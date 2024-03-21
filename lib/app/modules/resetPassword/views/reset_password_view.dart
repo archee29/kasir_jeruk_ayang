@@ -45,7 +45,7 @@ class ResetPasswordView extends GetView<ResetPasswordController> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Automatic Cat Feeder\nMobile Application",
+                  "Kasir Jeruk Ayang\nMobile Application",
                   style: TextStyle(
                     fontSize: 28,
                     color: Colors.white,
@@ -56,7 +56,7 @@ class ResetPasswordView extends GetView<ResetPasswordController> {
                 ),
                 SizedBox(height: 10),
                 Text(
-                  "by Muhammad Aswin Sigit",
+                  "by US",
                   style: TextStyle(color: Colors.white),
                 ),
               ],

@@ -32,7 +32,7 @@ class LoginView extends GetView<LoginController> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Automatic Cat Feeder\nMobile Application",
+                  "Kasir Jeruk Ayang\nMobile Application",
                   style: TextStyle(
                     fontSize: 28,
                     color: Colors.white,
@@ -43,7 +43,7 @@ class LoginView extends GetView<LoginController> {
                 ),
                 SizedBox(height: 10),
                 Text(
-                  "by Muhammad Aswin Sigit",
+                  "by US",
                   style: TextStyle(color: Colors.white),
                 ),
               ],

@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/historyTransaksi/bindings/history_transaksi_binding.dart';
+import '../modules/historyTransaksi/views/history_transaksi_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
@@ -14,6 +16,8 @@ import '../modules/setting/bindings/setting_binding.dart';
 import '../modules/setting/views/setting_view.dart';
 import '../modules/signup/bindings/signup_binding.dart';
 import '../modules/signup/views/signup_view.dart';
+import '../modules/updateProfile/bindings/update_profile_binding.dart';
+import '../modules/updateProfile/views/update_profile_view.dart';
 
 part 'app_routes.dart';
 
@@ -35,7 +39,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.SETTING,
-      page: () => const SettingView(),
+      page: () => SettingView(),
       binding: SettingBinding(),
     ),
     GetPage(
@@ -57,6 +61,16 @@ class AppPages {
       name: _Paths.NEW_PASSWORD,
       page: () => const NewPasswordView(),
       binding: NewPasswordBinding(),
+    ),
+    GetPage(
+      name: _Paths.UPDATE_PROFILE,
+      page: () => UpdateProfileView(),
+      binding: UpdateProfileBinding(),
+    ),
+    GetPage(
+      name: _Paths.HISTORY_TRANSAKSI,
+      page: () => const HistoryTransaksiView(),
+      binding: HistoryTransaksiBinding(),
     ),
   ];
 }

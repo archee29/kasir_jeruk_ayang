@@ -1,23 +1,20 @@
 import 'package:get/get.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:kasir_jeruk_ayang/app/routes/app_pages.dart';
 
 class SettingController extends GetxController {
-  //TODO: Implement SettingController
+  FirebaseAuth auth = FirebaseAuth.instance;
+  FirebaseFirestore firestore = FirebaseFirestore.instance;
 
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
+  Stream<DocumentSnapshot<Map<String, dynamic>>> streamUser() async* {
+    // print("called");
+    String uid = auth.currentUser!.uid;
+    yield* firestore.collection("user").doc(uid).snapshots();
   }
 
-  @override
-  void onReady() {
-    super.onReady();
+  void logout() async {
+    await auth.signOut();
+    Get.offAllNamed(Routes.LOGIN);
   }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  void increment() => count.value++;
 }
